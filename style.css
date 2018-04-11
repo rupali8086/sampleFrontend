@@ -1,0 +1,11 @@
+ .container
+        {
+          margin-top: 30px;
+          margin-left: 50px;
+          width: 700px;
+          height: auto;
+          border-radius: 10px;
+          /*border: solid 1px ;*/
+          border-style: groove;
+          padding: 10px;
+         }

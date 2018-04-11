@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>game worrior</title>
+
+    <link rel="icon" href="assets/image/favicon.ico" type="image/ico" sizes="16x16">
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+   
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+       
+</head>
+
+<body >
+    
+ 
+    <nav class="navbar navbar-light bg-light" style="height: 130;">
+      <a class="navbar-brand" href="#">
+      <img src="http://bee.zone/img/bk-logo-black.png" width="330" height="80" class="d-inline-block align-top" alt="">
+      </a> 
+    </nav>
+    
+  <div >
+    
+   <img src="http://bk.peacevillageretreatcenter.org/wp-content/uploads/2015/07/cropped-1406-pvrainbow31.jpg" >
+   <div class="text-area-center container" id="adoption-form">
+
+<form class='rescue-search'>
+    <label for='animalTypeInput' class='rescue-label'>
+        <p class="form-option">Animal Type</p>
+        <select id='animalTypeInput' class='uk-select uk-form-width-medium'>
+            <option>Any</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Bird</option>
+            <option>Horse</option>
+            <option>Barnyard</option>
+            <option>Reptile</option>
+            <option>Little Guy</option>
+        </select>
+        <input id='animal-type-other'>
+    </label>
+    <label for='animal-size' class='rescue-label'>
+        <p class="form-option">Animal Size</p>
+        <select id='animal-size' class='uk-select uk-form-width-medium'>
+            <option>Any</option>
+            <option value='S'>Small</option>
+            <option value='M'>Medium</option>
+            <option value='L'>Large</option>
+            <option value='XL'>Huge</option>
+        </select>
+    </label>
+    <label for='animal-gender' class='rescue-label'>
+        <p class="form-option">Animal Gender</p>
+        <select id='animal-gender' class='uk-select uk-form-width-medium'>
+            <option>Any</option>
+            <option value='M'>Male</option>
+            <option value='F'>Female</option>
+        </select>
+    </label>
+    <label for='animal-location' class='rescue-label'>
+        <p class="form-option">Zip Code/City, State</p>
+        <input id='zipcodeInput' class='uk-input uk-form-width-medium' type='text'>
+    </label>
+    <p>
+        <button type='submit' id='submit' class='uk-button uk-button-primary'>Search</button>
+    </p>
+</form>
+
+<div id="apiView"></div>
+
+</div>
+  </div>
+
+      <script type="text/javascript">
+        $('.dropdown-toggle').dropdown()
+      </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <script src="assets/js/auth.js"></script>
+</body>
+</html>

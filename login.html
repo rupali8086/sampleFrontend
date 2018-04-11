@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>game worrior</title>
+
+    <link rel="icon" href="assets/image/favicon.ico" type="image/ico" sizes="16x16">
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+   
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+       
+</head>
+
+<body >
+    
+ 
+    <nav class="navbar navbar-light bg-light" style="height: 130;">
+      <a class="navbar-brand" href="#">
+      <img src="http://bee.zone/img/bk-logo-black.png" width="330" height="80" class="d-inline-block align-top" alt="">
+      </a> 
+    </nav>
+    
+  <div >
+    
+    <form class="container">
+       <p>BK Retreat Registration</p>
+
+       <hr>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-info">Login</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Sign up</button>
+
+        <hr>
+        <div style="display: inline-block;">
+        <p>login here for 
+        <div class="btn-group">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" data-toggle="modal" data-target="#center">Center</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#admin">Admin</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#PVadmin">PV Admin</a>
+            </div>
+        </div>
+        </p>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- ********************************************************************************* -->
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WELCOME </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form class="col s12" id="signup-form" method="POST"> 
+             
+                <div class="row">
+                  <div class="input-field col s6">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input id="first_name" name="firstname" type="text" class="validate">
+                     <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input id="last_name" name="lastname" type="text" class="validate">
+                     <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">person_pin </i>
+                      <input id="username" name="username" type="text" class="validate">
+                      <label for="username">Contact</label>
+                    </div>
+                  
+                    <div class="input-field col s12">
+                       <i class="material-icons prefix">email</i>
+                       <input id="email" name="email" type="email" class="validate">
+                       <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input id="password" name="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input id="password-confirm" name="confirmpassword" type="password" class="validate">
+                      <label for="password-confirm">Password Confirmation</label>
+                  </div>
+                </div>
+                <!-- <center>
+                  <button class="btn waves-effect waves-light teal">Submit</button>
+              </center> -->
+              </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Register</button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ********************************************************************************* -->
+
+  <!-- center login -->
+  <div class="modal fade" id="center" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WELCOME </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form class="col s12" id="signup-form" method="POST"> 
+              <div class="row">
+                <div class="input-field col ">
+                       <i class="material-icons prefix">email</i>
+                       <input id="email" name="email" type="email" class="validate">
+                       <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col ">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input id="password" name="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                  </div>
+              </div>
+                
+              </form>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Login</button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ************************************************************************************* -->
+  <!-- admin login -->
+
+  <div class="modal fade" id="admin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WELCOME !!! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form class="col s12" id="signup-form" method="POST"> 
+              <div class="row">
+                <div class="input-field col ">
+                       <i class="material-icons prefix">email</i>
+                       <input id="email" name="email" type="email" class="validate">
+                       <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col ">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input id="password" name="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                  </div>
+              </div>
+                
+              </form>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Login</button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ****************************************************************************************** -->
+  <!-- PVadmin login -->
+
+  <div class="modal fade" id="PVadmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hello PV Admin!!! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form class="col s12" id="signup-form" method="POST"> 
+              <div class="row">
+                <div class="input-field col ">
+                       <i class="material-icons prefix">email</i>
+                       <input id="email" name="email" type="email" class="validate">
+                       <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col ">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input id="password" name="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                  </div>
+              </div>
+                
+              </form>
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Login</button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ****************************************************************************************** -->
+
+
+      <script type="text/javascript">
+        $('.dropdown-toggle').dropdown()
+      </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <script src="assets/js/auth.js"></script>
+</body>
+</html>
