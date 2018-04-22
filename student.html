@@ -41,11 +41,18 @@
       <img src="http://bee.zone/img/bk-logo-black.png" width="330" height="80" class="d-inline-block align-top" alt="">
       </a> 
     </nav>
+
+    <a href="studentRSVP.html"> click here to see RSVP page</a><br>
+     <a href="pv.html"> click here to see PV page</a><br>
+     <a href="center.html"> click here to see center page</a><br>
+     <a href="admin.html"> click here to see admin page</a>
     
   <div >
+
+
     
    <!-- <img src="http://bk.peacevillageretreatcenter.org/wp-content/uploads/2015/07/cropped-1406-pvrainbow31.jpg" > -->
-   <div class="container" id="">
+   <div class="container1" id="">
 
 <form class='srudent-registration'>
     
@@ -56,7 +63,7 @@
             <option value='brother'>Brother</option>
             <option value='sister'>Sister</option>
         </select>
-    </label>
+    </label><br>
 
     
     <label for="usr">First Name:</label>
@@ -143,18 +150,19 @@
                   <div class="modal-body">
                     <!-- <p>Some text in the modal.</p> -->
                     <div class="row">
-                        <div class="input-field col ">
+                        <div class="input-field col 12">
                                <label for="member one">Name</label>
                                <input id="memberOne" name="memberOne" type="text" class="validate">
                         </div>
                         </div>
                         <div class="row">
-                          <div class="input-field col ">
-                              <label for="memberAge">Age</label>
+                          <div class="input-field col 12">
+                              <label for="memberAge">Age </label>
                               <input id="memberAge" name="age" type="number" class="validate">
                               
                           </div>
-                          <div class="input-field  ">
+                          <p style="padding: 20px;">(ex: A is filling up the form and adding mother info so select option mother)</p>
+                          <div class="input-field col 12  ">
                               <label for="memberAge">Relationship </label>
                               <!-- <input id="memberAge" name="relationship" type="text" class="validate"> -->
                               <select name="center_support" class="center_support" >
@@ -165,12 +173,16 @@
                                     <option value="daughter">Daughter</option>
                                     <option value="sibling">Sibling</option>
                                     <option value="other">Other</option>
+                                    <option value="husband">Husband</option>
+                                    <option value= "wife">Wife</option>
                              </select>
-                             <p>(ex: A is filling up the form and adding mother info so select option mother)</p>
-                              <label for='translation_lang'>If Others, Plz mention here(Note: If you are adding info who is belongs to other than family relationship plz sign up anf fill info seprately) </label>
-                                <input type="text" name="relationship" id="relationship" class="input" value=""  />
+                             
                               
                           </div>
+
+                          
+                              <p style="padding: 20px;">If Others, Plz mention here(Note: If you are adding info who is belongs to other than family relationship plz sign up anf fill info seprately)  <input type="text" name="relationship" id="relationship" class="input" value=""  /></p>
+                                
                       </div>
                         
                   </div>
@@ -187,8 +199,8 @@
 
   <!-- ************************************************************************************* -->
     </p>
-    Do you need ride ?
-
+   
+   
                                 
     <!-- <p class="input-group input-text input-field-family_member_two_details">
         <label for='family_member_two_details'>Family Member 2 Details (Name, Age, Relationship)</label>
