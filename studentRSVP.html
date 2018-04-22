@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>game worrior</title>
+
+    <link rel="icon" href="assets/image/favicon.ico" type="image/ico" sizes="16x16">
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+
+
+    
+   
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+       
+</head>
+
+<body style="background-image: url(http://akcfm.com/wp-content/uploads/2013/11/zen-balance-pebbles-80219.jpg); background-attachment: fixed;">
+
+	 <nav class="navbar navbar-light bg-light" style="height: 130;">
+      <a class="navbar-brand" href="#">
+      <img src="http://bee.zone/img/bk-logo-black.png" width="330" height="80" class="d-inline-block align-top" alt="">
+      </a> 
+    </nav>
+		
+    <div class="container">	
+
+     <label for="usr">Retreat Name </label>
+     <input type="text" class="form-control" id="year">
+     <br>
+      <label for="usr"> How many people are coming to this retreat ?? </label>
+      <select name="space" class="spaces" >
+     		<option value="">Select Here</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+       </select>
+     <br><br>
+
+
+    <div class="row">
+    	<div class="col 6">
+     <p class="input-group input-date input-field-date_of_arrival ">
+		<label for='date_of_arrival'>Date Of Arrival  <span class="em-form-required">  *   </span></label>
+		<span class="em-date-single">			
+				<input class="em-date-start em-date-input-loc " type="Date" name="date_of_departure[start_loc]" />
+				<input class="em-date-input" type="hidden" name="date_of_departure[start]" value="" />
+			</span>
+    	</p>
+       </div>
+       <div class="col 6">
+		<p class="input-group input-time input-field-time_of_arrival">
+		<label for='time_of_arrival'>Time Of Arrival (approx) <span class="em-form-required">*</span></label>
+          <select name="space" class="spaces" >
+     		<option value="">Select Here</option>
+            <option>Early Morning</option>
+            <option>Morning </option>
+            <option>Noon</option>
+            <option>Evening</option>
+            <option>Night</option>
+            <option>Late Night</option>
+         </select>
+    	</p>
+    </div>
+    	</div>
+
+    	<!-- next row -->
+    	<div class="row">
+    	<div class="col 6">
+		<p class="input-group input-date input-field-date_of_departure">
+			<label for='date_of_departure'>Date Of Departure  <span class="em-form-required">*</span></label>
+            <span class="em-date-single">			
+				<input class="em-date-start em-date-input-loc" type="Date" name="date_of_departure[start_loc]" />
+				<input class="em-date-input" type="hidden" name="date_of_departure[start]" value="" />
+			</span>
+		</p>
+	</div>
+	<div class="col 6">
+		<p class="input-group input-time input-field-time_of_departure">
+			<label for='time_of_departure'>Time Of Departure (approx)</label>
+           <select name="space" class="spaces" >
+     		<option value="">Select Here</option>
+            <option>Early Morning</option>
+            <option>Morning </option>
+            <option>Noon</option>
+            <option>Evening</option>
+            <option>Night</option>
+            <option>Late Night</option>
+         </select>
+		</p>
+	</div>
+</div>
+
+<label for="usr">How can we help you while visit Peace Village </label>
+     <input type="text" class="form-control" id="year">
+
+    </div>
+
+
+    <!-- trying -->
+
+
+
+<!-- <select id="form-s" multiple="multiple">
+    <option selected>city1</option>
+    <option selected value="c2">city2</option>
+    <option value="c3">city3</option>
+</select>   
+<select id="aioConceptName">
+    <option value="s1" selected >choose io</option>
+    <option value="s2">roma </option>
+    <option value="s3">totti</option>
+</select>
+<select id="test">
+    <option value="s4">paloma</option>
+    <option value="s5" selected >foo</option>
+    <option value="s6">bar</option>
+</select>
+<script>
+$('select').change(function() {
+    var a=$(':selected').text(); // "city1city2choose iofoo"
+    var b=$(':selected').val();  // "city1" - selects just first query !
+    //but..
+    var c=$(':selected').map(function(){ // ["city1","city2","choose io","foo"]
+        return $(this).text();
+    }); 
+    var d=$(':selected').map(function(){ // ["city1","c2","s1","s5"]
+        return $(this).val();
+    });
+    console.log(a,b,c,d);
+});
+</script>
+ -->
+
+</body>
+</html>

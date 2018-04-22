@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+   
+        <style>
+            body{
+                color:white; background: #590a18;
+            }
+            .collection-item{ color: black; background: #590a18;}
+            .ui-tabs-anchor {outline: none;}
+            #soccer,#football,#hockey,#baseball,#addNewGame{
+                margin:30px;
+                height: auto;
+                }
+            .nav-wrapper{padding: 20px;}
+        </style>
+       
+      <script type="text/javascript">
+         $(document).ready(function(){
+          // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+          $('.modal').modal();
+          //$('select').material_select();
+          // for date 
+         $('select').material_select(); 
+         $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 5, // Creates a dropdown of 15 years to control year,
+            today: 'Today',
+            clear: 'Clear',
+            close: 'Ok',
+            closeOnSelect: false // Close upon selecting a date,
+         });
+        $('.timepicker').pickatime({
+           default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+           fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+           twelvehour: false, // Use AM/PM or 24-hour format
+           donetext: 'OK', // text for done-button
+           cleartext: 'Clear', // text for clear-button
+           canceltext: 'Cancel', // Text for cancel-button
+           autoclose: false, // automatic close timepicker
+           ampmclickable: true, // make AM PM clickable
+           aftershow: function(){} //Function for after opening timepicker
+         });
+        });
+      </script>
+  </head>
+   <body >
+        <!-- navbar -->
+         <div class="navbar-fixed">
+            <nav>
+              <div class="nav-wrapper">
+                <!-- <a href="#!" class="brand-logo">Logo</a> -->
+                Welcome back Admin
+                <ul class="right hide-on-med-and-down">
+                  <!-- <li><a href="#batch" class="btn">Batch Contacts</a></li> -->
+                  <!-- <li><a id="batch" class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Coach1 : +1 6035025555  Coach2 : +1 6035026666 ">Coach Contacts</a></li> -->
+                  <li><a href="index.html" class="btn">SIGN OUT</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        <div>
+        <hr>
+        <!-- =================weather widget start====================================================== -->
+        <!--  -->
+        <!-- ============================ email and text Notification with API  ==================================== -->
+            
+   <!--================== ADD NEW GAME============================================================== -->
+        
+          <!-- Modal Structure -->
+        <div class="container body">
+          <div class="row">
+          <div id="addNewGame" class="table table-bordered">
+      
+             <div class="display-4"><center>Add Retreat name here</center></div>
+              <div class="row ">
+                <div class="input-field col s6">
+                      <select id="academy" name="academy">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="BK">BK</option>
+                        <option value="nonbk">Non BK/Public</option>
+                        <option value="teacher">Teacher</option>
+                        
+                     </select>
+                     <!-- <label>Game Academy</label> -->
+                  </div>
+                  <div class="input-field col s6">
+                     <!-- <i class="material-icons prefix">account_circle</i> -->
+                     <input id="gameEvent" type="text" class="validate">
+                     <label >Upcoming Events Name</label>
+                  </div>
+                  
+                  <div class="input-field col s6">
+                     <!-- <i class="material-icons prefix">account_circle</i> -->
+                     <input id="gameDate" type="text" class="datepicker">
+                     <label >Date</label>
+                  </div>
+                  
+                </div>
+                
+                
+                <center>
+                  <button class="btn waves-effect waves-light teal" id="addnewgame">Submit</button>
+              </center><br>
+            </div>
+          </div>
+
+
+
+       
+    </body>
+    </html>

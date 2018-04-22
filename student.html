@@ -18,6 +18,17 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+    Compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+     -->
     <link rel="stylesheet" type="text/css" href="style.css">
        
 </head>
@@ -33,52 +44,178 @@
     
   <div >
     
-   <img src="http://bk.peacevillageretreatcenter.org/wp-content/uploads/2015/07/cropped-1406-pvrainbow31.jpg" >
-   <div class="text-area-center container" id="adoption-form">
+   <!-- <img src="http://bk.peacevillageretreatcenter.org/wp-content/uploads/2015/07/cropped-1406-pvrainbow31.jpg" > -->
+   <div class="container" id="">
 
-<form class='rescue-search'>
-    <label for='animalTypeInput' class='rescue-label'>
-        <p class="form-option">Animal Type</p>
-        <select id='animalTypeInput' class='uk-select uk-form-width-medium'>
-            <option>Any</option>
-            <option>Dog</option>
-            <option>Cat</option>
-            <option>Bird</option>
-            <option>Horse</option>
-            <option>Barnyard</option>
-            <option>Reptile</option>
-            <option>Little Guy</option>
-        </select>
-        <input id='animal-type-other'>
-    </label>
-    <label for='animal-size' class='rescue-label'>
-        <p class="form-option">Animal Size</p>
+<form class='srudent-registration'>
+    
+    <label for='title' class='rescue-label'>
+        <!-- <p class="form-option">Brother/Sister</p> -->
         <select id='animal-size' class='uk-select uk-form-width-medium'>
-            <option>Any</option>
-            <option value='S'>Small</option>
-            <option value='M'>Medium</option>
-            <option value='L'>Large</option>
-            <option value='XL'>Huge</option>
+            <option>Title</option>
+            <option value='brother'>Brother</option>
+            <option value='sister'>Sister</option>
         </select>
     </label>
-    <label for='animal-gender' class='rescue-label'>
-        <p class="form-option">Animal Gender</p>
-        <select id='animal-gender' class='uk-select uk-form-width-medium'>
-            <option>Any</option>
-            <option value='M'>Male</option>
-            <option value='F'>Female</option>
-        </select>
-    </label>
-    <label for='animal-location' class='rescue-label'>
-        <p class="form-option">Zip Code/City, State</p>
-        <input id='zipcodeInput' class='uk-input uk-form-width-medium' type='text'>
-    </label>
-    <p>
-        <button type='submit' id='submit' class='uk-button uk-button-primary'>Search</button>
-    </p>
-</form>
 
-<div id="apiView"></div>
+    
+    <label for="usr">First Name:</label>
+    <input type="text" class="form-control" id="usr">
+
+  <label for="usr">Last Name:</label>
+  <input type="text" class="form-control" id="usr">
+  <br>
+
+  <!-- DOB -->
+  
+   <label for="usr">Date of Birth</label>
+   <input type="date" name="bday">
+   <!--  -->
+    
+    <br>
+    <label for="usr">CENTER/CLASS Connected to  : </label>
+     <input type="text" class="form-control" id="center">
+
+     <br>
+    <label for="usr">How long a BK </label>
+     <input type="number" class="form-control" id="year">
+     <br>
+     <label for='support' class=''>
+        <p class="form-option">Center Support</p>
+        <select name="center_support" class="center_support" >
+            <option value="">Select Here</option>
+            <option >BK (following all Maryada)</option>
+            <option >New Murli Student</option>
+            <option >Teacher</option>
+            <!-- <option >Guest</option> -->
+                                
+        </select>
+    </label>
+
+
+    <!-- additional info -->
+
+    <p class="input-group input-select input-field-translation_needed">
+                    <label for='translation_needed'>Translation Needed </label>
+        <select name="translation_needed" class="translation_needed" >
+            <option value="">Select ...</option>
+            <option >Hindi</option>
+            <option >Spanish</option>
+            <option >Others</option>
+        </select>
+    </p>
+    
+    <p class="input-group input-text input-field-translation_lang">
+        <label for='translation_lang'>If Others, Specify Language</label>
+            <input type="text" name="translation_lang" id="translation_lang" class="input" value=""  />
+    </p>
+               
+    <p class="input-group input-text input-field-phone">
+        <label for='phone'>Phone  <span class="em-form-required">*</span></label>
+            <input type="text" name="phone" id="phone" class="input" value=""  />
+    </p>
+    
+    <p class="input-group input-text input-field-phone_emergency">
+        <label for='phone_emergency'>Phone(in case of emergency) different from yours</label>
+            <input type="text" name="phone_emergency" id="phone_emergency" class="input" value=""  />
+    </p>
+    <hr>
+
+    <!-- <p class="input-group input-text input-field-family_member_one_details"> -->
+        <!-- <label for='family_member_one_details'>Family Member 1 Details (Name, Age, Relationship)</label> -->
+        
+        <!-- <input type="text" name="family_member_one_details" id="family_member_one_details" class="input" value=""  /> -->
+        <!-- ********************************************************************************* -->
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Family Members</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Add family member</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <!-- <p>Some text in the modal.</p> -->
+                    <div class="row">
+                        <div class="input-field col ">
+                               <label for="member one">Name</label>
+                               <input id="memberOne" name="memberOne" type="text" class="validate">
+                        </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col ">
+                              <label for="memberAge">Age</label>
+                              <input id="memberAge" name="age" type="number" class="validate">
+                              
+                          </div>
+                          <div class="input-field  ">
+                              <label for="memberAge">Relationship </label>
+                              <!-- <input id="memberAge" name="relationship" type="text" class="validate"> -->
+                              <select name="center_support" class="center_support" >
+                                    <option >Select Here</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="father">Father</option>
+                                    <option value="son">Son</option>
+                                    <option value="daughter">Daughter</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="other">Other</option>
+                             </select>
+                             <p>(ex: A is filling up the form and adding mother info so select option mother)</p>
+                              <label for='translation_lang'>If Others, Plz mention here(Note: If you are adding info who is belongs to other than family relationship plz sign up anf fill info seprately) </label>
+                                <input type="text" name="relationship" id="relationship" class="input" value=""  />
+                              
+                          </div>
+                      </div>
+                        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+           
+
+  <!-- ************************************************************************************* -->
+    </p>
+    Do you need ride ?
+
+                                
+    <!-- <p class="input-group input-text input-field-family_member_two_details">
+        <label for='family_member_two_details'>Family Member 2 Details (Name, Age, Relationship)</label>
+            <input type="text" name="family_member_two_details" id="family_member_two_details" class="input" value=""  />
+    </p>
+                                
+    <p class="input-group input-text input-field-family_member_three_details">
+        <label for='family_member_three_details'>Family Member 3 Details (Name, Age, Relationship) </label>
+        <input type="text" name="family_member_three_details" id="family_member_three_details" class="input" value=""  />
+    </p>
+    
+    <p class="input-group input-text input-field-family_member_four_details">
+        <label for='family_member_four_details'>Family Member 4 Details (Name, Age, Relationship) </label>
+        <input type="text" name="family_member_four_details" id="family_member_four_details" class="input" value=""  />
+    </p>
+    
+    <p class="input-group input-textarea input-field-special_instructions">
+        <label for='special_instructions'> Special Instructions</label>
+        <textarea name="special_instructions" id="special_instructions" class="input" rows="2" cols="20"></textarea>
+    </p>
+     -->
+    <div class="em-booking-buttons">
+        <input type="submit" class="em-booking-submit" id="em-booking-submit" value="Submit" />
+    </div>
+   </div>
+<!--  -->
+</form>
 
 </div>
   </div>
